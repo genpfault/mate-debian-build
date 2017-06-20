@@ -1,0 +1,120 @@
+[submodule "mate-settings-daemon"]
+	path = mate-settings-daemon
+	url = https://github.com/mate-desktop/mate-settings-daemon.git
+[submodule "python-caja"]
+	path = python-caja
+	url = https://github.com/mate-desktop/python-caja.git
+[submodule "pluma"]
+	path = pluma
+	url = https://github.com/mate-desktop/pluma.git
+[submodule "mozo"]
+	path = mozo
+	url = https://github.com/mate-desktop/mozo.git
+[submodule "mate-utils"]
+	path = mate-utils
+	url = https://github.com/mate-desktop/mate-utils.git
+[submodule "mate-user-share"]
+	path = mate-user-share
+	url = https://github.com/mate-desktop/mate-user-share.git
+[submodule "mate-user-guide"]
+	path = mate-user-guide
+	url = https://github.com/mate-desktop/mate-user-guide.git
+[submodule "mate-themes"]
+	path = mate-themes
+	url = https://github.com/mate-desktop/mate-themes.git
+[submodule "mate-terminal"]
+	path = mate-terminal
+	url = https://github.com/mate-desktop/mate-terminal.git
+[submodule "mate-system-monitor"]
+	path = mate-system-monitor
+	url = https://github.com/mate-desktop/mate-system-monitor.git
+[submodule "mate-session-manager"]
+	path = mate-session-manager
+	url = https://github.com/mate-desktop/mate-session-manager.git
+[submodule "mate-sensors-applet"]
+	path = mate-sensors-applet
+	url = https://github.com/mate-desktop/mate-sensors-applet.git
+[submodule "mate-screensaver"]
+	path = mate-screensaver
+	url = https://github.com/mate-desktop/mate-screensaver.git
+[submodule "mate-power-manager"]
+	path = mate-power-manager
+	url = https://github.com/mate-desktop/mate-power-manager.git
+[submodule "mate-polkit"]
+	path = mate-polkit
+	url = https://github.com/mate-desktop/mate-polkit.git
+[submodule "mate-panel"]
+	path = mate-panel
+	url = https://github.com/mate-desktop/mate-panel.git
+[submodule "mate-notification-daemon"]
+	path = mate-notification-daemon
+	url = https://github.com/mate-desktop/mate-notification-daemon.git
+[submodule "mate-netbook"]
+	path = mate-netbook
+	url = https://github.com/mate-desktop/mate-netbook.git
+[submodule "mate-menus"]
+	path = mate-menus
+	url = https://github.com/mate-desktop/mate-menus.git
+[submodule "mate-media"]
+	path = mate-media
+	url = https://github.com/mate-desktop/mate-media.git
+[submodule "mate-icon-theme-faenza"]
+	path = mate-icon-theme-faenza
+	url = https://github.com/mate-desktop/mate-icon-theme-faenza.git
+[submodule "mate-icon-theme"]
+	path = mate-icon-theme
+	url = https://github.com/mate-desktop/mate-icon-theme.git
+[submodule "mate-desktop"]
+	path = mate-desktop
+	url = https://github.com/mate-desktop/mate-desktop.git
+[submodule "mate-control-center"]
+	path = mate-control-center
+	url = https://github.com/mate-desktop/mate-control-center.git
+[submodule "mate-common"]
+	path = mate-common
+	url = https://github.com/mate-desktop/mate-common.git
+[submodule "mate-calc"]
+	path = mate-calc
+	url = https://github.com/mate-desktop/mate-calc.git
+[submodule "mate-backgrounds"]
+	path = mate-backgrounds
+	url = https://github.com/mate-desktop/mate-backgrounds.git
+[submodule "mate-applets"]
+	path = mate-applets
+	url = https://github.com/mate-desktop/mate-applets.git
+[submodule "libmateweather"]
+	path = libmateweather
+	url = https://github.com/mate-desktop/libmateweather.git
+[submodule "libmatemixer"]
+	path = libmatemixer
+	url = https://github.com/mate-desktop/libmatemixer.git
+[submodule "libmatekbd"]
+	path = libmatekbd
+	url = https://github.com/mate-desktop/libmatekbd.git
+[submodule "eom"]
+	path = eom
+	url = https://github.com/mate-desktop/eom.git
+[submodule "engrampa"]
+	path = engrampa
+	url = https://github.com/mate-desktop/engrampa.git
+[submodule "caja-extensions"]
+	path = caja-extensions
+	url = https://github.com/mate-desktop/caja-extensions.git
+[submodule "caja-dropbox"]
+	path = caja-dropbox
+	url = https://github.com/mate-desktop/caja-dropbox.git
+[submodule "caja"]
+	path = caja
+	url = https://github.com/mate-desktop/caja.git
+[submodule "atril"]
+	path = atril
+	url = https://github.com/mate-desktop/atril.git
+[submodule "marco"]
+	path = marco
+	url = https://github.com/mate-desktop/marco.git
+[submodule "mate-desktop.org"]
+	path = mate-desktop.org
+	url = https://github.com/mate-desktop/mate-desktop.org.git
+[submodule "mate-indicator-applet"]
+	path = mate-indicator-applet
+	url = https://github.com/mate-desktop/mate-indicator-applet.git
