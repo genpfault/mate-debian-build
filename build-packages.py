@@ -17,7 +17,8 @@ os.chdir(script_dir)
 os.system('mkdir -p deb')
 os.system('mkdir -p logs')
 
-def build_package( package, options ):
+
+def build_package(package, options):
     # grab SHA1 of package
     os.chdir(script_dir)
     os.chdir(package)
@@ -129,7 +130,7 @@ if len(packages) == 0:
         'engrampa',
         'atril',
         'mozo',
-        ]
+    ]
     options.install_deps = True
     options.install = True
 
@@ -140,7 +141,7 @@ for i in range(0, len(packages)):
         sys.exit(1)
     if package[-1] == '/':
         package = package[:-1]
-    if not os.path.exists('{0}/{1}'.format(script_dir,package)):
+    if not os.path.exists('{0}/{1}'.format(script_dir, package)):
         print 'E: package \'{0}\' not found'.format(package)
         sys.exit(1)
 
