@@ -118,3 +118,6 @@
 [submodule "mate-indicator-applet"]
 	path = mate-indicator-applet
 	url = https://github.com/mate-desktop/mate-indicator-applet.git
+[submodule "debian-packages"]
+	path = debian-packages
+	url = https://github.com/mate-desktop/debian-packages.git
