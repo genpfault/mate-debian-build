@@ -15,8 +15,6 @@ script_dir = os.path.dirname(os.path.realpath(__file__))
 # create output directories
 os.chdir(script_dir)
 os.system('mkdir -p deb')
-os.system('mkdir -p logs')
-
 
 def build_package(package, options):
     # grab SHA1 of package
@@ -53,9 +51,11 @@ def build_package(package, options):
 
     # discover and install build dependencies
     if options.install_deps:
+        print('Installing build dependencies...')
         os.system('sudo mk-build-deps --tool="apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends -y" --install --remove')
 
     # build package
+    ret = -1
     if options.source:
         os.system('dpkg-buildpackage -S -Zxz -uc -us')
         os.system('cp -v ../*.dsc {0}/deb/'.format(script_dir))
@@ -63,21 +63,25 @@ def build_package(package, options):
         os.system('cp -v ../*.changes {0}/deb/'.format(script_dir))
     else:
         if options.i386:
-            os.system('dpkg-buildpackage -B -ai386 -Zxz -uc -tc 2>&1 | tee build.log')
+            ret = os.system('dpkg-buildpackage -B -ai386 -Zxz -uc -tc 2>&1')
         else:
-            os.system('dpkg-buildpackage -b -Zxz -uc -tc 2>&1 | tee build.log')
-        os.system('cp -v build.log {0}/logs/{1}.log'.format(script_dir, package))
-        os.system('cp -v ../*.deb {0}/deb/'.format(script_dir))
-        if options.install:
-            # install built package(s)
-            os.chdir('..')
-            for deb in glob.glob('*.deb'):
-                os.system('sudo dpkg --install {0}'.format(deb))
-            os.system('sudo apt-get -y -f install')
+            ret = os.system('dpkg-buildpackage -b -Zxz -uc -tc 2>&1')
+        if 0 == ret:
+            os.system('cp -v ../*.deb {0}/deb/'.format(script_dir))
+            if options.install:
+                # install built package(s)
+                os.chdir('..')
+                for deb in glob.glob('*.deb'):
+                    os.system('sudo dpkg --install {0}'.format(deb))
+                os.system('sudo apt-get -y -f install')
 
     # cleanup
     os.chdir(script_dir)
     os.system('rm -rf {0}'.format(temp_dir))
+
+    if 0 != ret:
+        sys.exit('E: package \'{0}\' build failed!'.format(package))
+
     print "---------------------------------------------------------------"
     return
 
