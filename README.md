@@ -16,4 +16,6 @@ Packages are copied to `mate-debian-build/deb`.
 
 Building everything takes around 35 minutes on a Xeon D-1521 in a 4-core, 4 GiB KVM VM.
 
-You'll also want to install the `xorg` metapackage as well as the display manager (LightDM, GDM, KDM, etc.) of your choice.
+You'll also want to install some of the `xorg` metapackages as well as the display manager (LightDM, GDM, KDM, etc.) of your choice.  For example:
+
+    sudo apt-get install lightdm desktop-base xorg xserver-xorg-input-all xserver-xorg-video-all
