@@ -120,4 +120,4 @@
 	url = https://github.com/mate-desktop/mate-indicator-applet.git
 [submodule "debian-packages"]
 	path = debian-packages
-	url = https://github.com/mate-desktop/debian-packages.git
+	url = https://github.com/genpfault/debian-packages.git
