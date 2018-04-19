@@ -7,9 +7,8 @@ I recommend spinning up a clean Debian Strech VM to build the packages in, `mk-b
 Build procedure:
 
     sudo apt-get install git-core devscripts dpkg-dev
-    git clone https://github.com/genpfault/mate-debian-build.git
+    git clone --recurse-submodules https://github.com/genpfault/mate-debian-build.git
     cd mate-debian-build
-    git submodule update --init --recursive
     ./build-packages.py
 
 Packages are copied to `mate-debian-build/deb`.
